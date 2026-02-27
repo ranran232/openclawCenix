@@ -1,10 +1,10 @@
 {
   "meta": {
     "lastTouchedVersion": "2026.2.23",
-    "lastTouchedAt": "2026-02-25T05:24:38.206Z"
+    "lastTouchedAt": "2026-02-27T01:46:13.244Z"
   },
   "wizard": {
-    "lastRunAt": "2026-02-25T05:24:36.672Z",
+    "lastRunAt": "2026-02-27T01:44:06.389Z",
     "lastRunVersion": "2026.2.23",
     "lastRunCommand": "configure",
     "lastRunMode": "local"
@@ -12,10 +12,14 @@
   "agents": {
     "defaults": {
       "model": {
-        "primary": "ollama/llama3.2:3b"
+        "primary": "openrouter/auto",
+        "fallbacks": [
+          "openrouter/auto"
+        ]
       },
       "models": {
-        "ollama/llama3.2:3b": {}
+        "openrouter/auto": {},
+        "openrouter/openrouter/auto": {}
       },
       "compaction": {
         "mode": "safeguard"
@@ -39,7 +43,7 @@
     "mode": "local",
     "auth": {
       "mode": "token",
-      "token": "3b65141d8dd392cf98f5a81dd761186a613bdac19fe91c7a"
+      "token": "395c2f5c5569362b07dc2deed36d01dc549a077936402c4b"
     }
   }
 }

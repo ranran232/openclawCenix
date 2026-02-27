@@ -1,10 +1,6 @@
 {
-  "meta": {
-    "lastTouchedVersion": "2026.2.23",
-    "lastTouchedAt": "2026-02-25T03:47:10.813Z"
-  },
   "wizard": {
-    "lastRunAt": "2026-02-25T03:47:10.806Z",
+    "lastRunAt": "2026-02-25T03:50:12.775Z",
     "lastRunVersion": "2026.2.23",
     "lastRunCommand": "configure",
     "lastRunMode": "local"
@@ -12,15 +8,9 @@
   "agents": {
     "defaults": {
       "model": {
-        "primary": "ollama/llama2:chat",
-        "fallbacks": [
-          "ollama/starcoder2:latest",
-          "ollama/gemma3:4b-it-q4_K_M"
-        ]
+        "primary": "ollama/llama2:chat"
       },
       "models": {
-        "ollama/starcoder2:latest": {},
-        "ollama/gemma3:4b-it-q4_K_M": {},
         "ollama/llama2:chat": {}
       },
       "compaction": {
@@ -30,15 +20,7 @@
       "subagents": {
         "maxConcurrent": 8
       }
-    },
-    "list": [
-      {
-        "id": "main",
-        "name": "main",
-        "workspace": "/home/ranran232/.openclaw/workspace",
-        "agentDir": "/home/ranran232/.openclaw/agents/main/agent"
-      }
-    ]
+    }
   },
   "messages": {
     "ackReactionScope": "group-mentions"
@@ -50,10 +32,10 @@
     "ownerDisplay": "raw"
   },
   "gateway": {
-    "mode": "local",
-    "auth": {
-      "mode": "token",
-      "token": "b8ac1b1c609f8be5bc96e53383b6c5762fe14be20ab0e466"
-    }
+    "mode": "local"
+  },
+  "meta": {
+    "lastTouchedVersion": "2026.2.23",
+    "lastTouchedAt": "2026-02-25T03:50:12.779Z"
   }
 }
